@@ -14,6 +14,33 @@ contract ValueStore {
         numberValue = _numberValue;
     }
 
+    // *** INT STORE ***
+
+    int256 public intValue;
+    int8 public intValue8;
+    int16 public intValue16;
+    int32 public intValue32;
+    int64 public intValue64;
+    int128 public intValue128;
+
+    function setIntValue(int256 _intValue) public {
+        intValue = _intValue;
+    }
+
+    function setIntValues(
+        int8 _intValue8,
+        int16 _intValue16,
+        int32 _intValue32,
+        int64 _intValue64,
+        int128 _intValue128
+    ) public {
+        intValue8 = _intValue8;
+        intValue16 = _intValue16;
+        intValue32 = _intValue32;
+        intValue64 = _intValue64;
+        intValue128 = _intValue128;
+    }
+
     // *** STRING STORE *** 
 
     string public stringValue;
