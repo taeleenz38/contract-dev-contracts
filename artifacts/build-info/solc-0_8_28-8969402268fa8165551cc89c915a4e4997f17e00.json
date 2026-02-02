@@ -1,0 +1,35 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_28-8969402268fa8165551cc89c915a4e4997f17e00",
+  "solcVersion": "0.8.28",
+  "solcLongVersion": "0.8.28+commit.7893614a",
+  "userSourceNameMap": {
+    "contracts/MockPriceFeed.sol": "project/contracts/MockPriceFeed.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "cancun",
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/MockPriceFeed.sol": {
+        "content": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.28;\n\ncontract MockPriceFeed {\n    int256 public value;\n    int8 public valueInt8;\n    int16 public valueInt16;\n    int32 public valueInt32;\n    int64 public valueInt64;\n    int128 public valueInt128;\n\n    function setPrice(int256 _value) public {\n        value = _value;\n    }\n\n    function setInts(\n        int8 _valueInt8,\n        int16 _valueInt16,\n        int32 _valueInt32,\n        int64 _valueInt64,\n        int128 _valueInt128\n    ) public {\n        valueInt8 = _valueInt8;\n        valueInt16 = _valueInt16;\n        valueInt32 = _valueInt32;\n        valueInt64 = _valueInt64;\n        valueInt128 = _valueInt128;\n    }\n}\n"
+      }
+    }
+  }
+}
